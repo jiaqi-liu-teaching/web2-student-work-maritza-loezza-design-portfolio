@@ -1,0 +1,73 @@
+/* One shared mobile content gutter for all five project pages. */
+@media (max-width: 600px) {
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) {
+  --project-gutter: 18px;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) > section[class]:not(.petguard-link-banner):not(.petguard-wireframes) {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--project-gutter));
+  max-width: none;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  transform: none;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) section section[class] {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) :is(.project-hero-heading,.project-overview-left,.el-overview-content,.eleanor-overview-left,.petguard-overview-left,.aqualume-overview-left,.project-overview-right,.eleanor-overview-visual,.petguard-overview-visual,.aqualume-overview-visual,.el-logo-box,.el-palette-box,.packaging-row,.deliverables-grid,.el-deliverables-grid,.el-character-grid,.aqualume-deliverables-grid,.petguard-deliverables-top,.petguard-illustration-grid,.overview-grid,.el-overview-grid,.eleanor-overview-grid,.petguard-overview-grid,.aqualume-overview-grid,.petguard-wireframes-marquee) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  transform: none;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) :is(.project-hero-text,.el-origen-hero-text,.eleanor-hero-text,.petguard-hero-text,.aqualume-hero-text,.overview-description,.el-overview-text,.eleanor-overview-text,.petguard-overview-text,.aqualume-overview-text) {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: 0;
+  transform: none;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) :is(.project-hero-img,.el-origen-hero-img,.eleanor-hero-img,.petguard-hero-img,.aqualume-hero-img,.petguard-website-img,.aqualume-deliverable-large,.aqualume-deliverable-small,.eleanor-showcase-img,.eleanor-ticket-img,.eleanor-theater-img,.el-overview-video,.el-poster-img,.el-small-deliverable,.el-large-deliverable,.el-bottle-mockup,.petguard-sign-img,.project-overview-img,.eleanor-overview-img,.aqualume-overview-img) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-inline: 0;
+  transform: none;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) :is(.font-card,.el-font-card,.petguard-font-card,.aqualume-font-card) {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) :is(.typography-section,.el-typography-section,.petguard-typography,.aqualume-typography) > :last-child:nth-child(odd) {
+  width: 100%;
+}
+:is(#aqualume-page,#eleanor-page,#petguard-page,#el-origen-page,#frosty-halo-page) .prev-next-nav {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--project-gutter));
+  max-width: none;
+  padding-inline: 0;
+  margin-inline: auto;
+}
+}
+
+/* Preserve the original edge-to-edge project banner. */
+@media (max-width: 600px) {
+  #petguard-page > section.petguard-link-banner {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+}

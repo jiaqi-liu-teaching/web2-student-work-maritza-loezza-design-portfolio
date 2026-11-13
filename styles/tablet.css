@@ -1,0 +1,1798 @@
+/* HOMEPAGE */
+
+.nav {
+  width: calc(100% - 48px);
+  height: 64px;
+  margin-top: 42px;
+  padding: 0 30px;
+  top: -4px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.nav-logo {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.nav-right {
+  grid-column: 3;
+  justify-self: end;
+  justify-content: flex-end;
+}
+
+.nav-mobile-panel {
+  display: none;
+}
+
+.nav a {
+  font-size: 11px;
+}
+
+.nav-logo-img {
+  width: 62px;
+}
+
+.hero {
+  width: calc(100% - 40px);
+  height: auto;
+  margin-top: -96px;
+  padding: 0;
+}
+
+.hero-banner {
+  margin-top: -14px;
+  padding-top: 14px;
+  padding-bottom: 0;
+}
+
+.hero-content {
+  inset: 0;
+  padding-top: 14px;
+}
+
+.hero h1 {
+  font-size: 144px;
+  letter-spacing: 4px;
+}
+
+.hero-banner {
+  min-height: 68px;
+  margin-top: -10px;
+  padding: 12px 28px;
+}
+
+.hero-banner-text {
+  font-size: 17px;
+  letter-spacing: 0.95px;
+}
+
+.about {
+  width: calc(100% - 56px);
+  padding: 82px 0 110px;
+  gap: 48px;
+  grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+}
+
+.about-image {
+  max-width: 340px;
+}
+
+.about-content {
+  max-width: 392px;
+  text-align: left;
+}
+
+.about h2 {
+  font-size: 48px;
+}
+
+.about .section-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.55px;
+}
+
+.about-content p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.about-flower {
+  width: 124px;
+  top: 40px;
+  right: -4px;
+}
+
+.selected-projects {
+  width: calc(100% - 56px);
+  padding: 0 0 40px;
+}
+
+.selected-projects-heading h2 {
+  font-size: 58px;
+}
+
+.selected-projects-heading p {
+  font-size: 12px;
+}
+
+.project-categories {
+  margin-top: 28px;
+  gap: 12px;
+}
+
+.category-btn {
+  min-width: 120px;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 13px;
+  background-color: transparent;
+  font-size: 11px;
+}
+
+.project-work {
+  width: calc(100% - 56px);
+  padding: 0 0 100px;
+  gap: 20px;
+}
+
+.project-card,
+.coming-soon {
+  min-height: 430px;
+  padding: 16px 16px 18px;
+  border-radius: 24px;
+}
+
+.project-img {
+  height: auto;
+  aspect-ratio: 2300 / 2044;
+  border-radius: 18px;
+}
+
+.project-card h3 {
+  margin-top: 14px;
+  font-size: 29px;
+}
+
+.project-card > p {
+  min-height: 58px;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.42;
+  font-weight: 400;
+}
+
+.project-tags {
+  padding-top: 18px;
+  padding-right: 56px;
+  gap: 10px;
+  min-height: 40px;
+}
+
+.project-tags p {
+  padding: 6px 15px 5px;
+  font-size: 12px;
+  border-radius: 999px;
+}
+
+.project-arrow {
+  width: 40px;
+  height: 40px;
+  right: 16px;
+  bottom: 16px;
+}
+
+.coming-soon {
+  background-size: calc(100% - 24px) auto;
+}
+
+.coming-soon-inner {
+  gap: 8px;
+  padding: 16px 16px;
+}
+
+.coming-soon-eyebrow {
+  padding: 7px 18px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+  transform: translateY(4px);
+}
+
+.coming-soon-inner h3 {
+  font-size: 34px;
+  letter-spacing: 0.35px;
+  line-height: 0.9;
+}
+
+.contact {
+  width: calc(100% - 56px);
+  padding: 0 0 68px;
+}
+
+.contact-content {
+  width: min(100%, 640px);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 60px;
+  padding: 0;
+}
+
+.contact h2::before {
+  top: 50%;
+  width: calc(100% + 200px);
+  max-width: 440px;
+  height: 72px;
+  transform: translate(-50%, -50%);
+}
+
+.contact .section-eyebrow {
+  padding: 8px 24px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.55px;
+}
+
+.contact-text,
+.contact-links {
+  width: 100%;
+  margin-left: 0;
+}
+
+.contact-text {
+  max-width: 400px;
+  margin: 14px auto 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.contact-links {
+  gap: 28px;
+}
+
+.contact-item {
+  width: 156px;
+  padding-right: 0;
+}
+
+.contact-links img {
+  width: 52px;
+  height: 52px;
+}
+
+.contact-links h3 {
+  font-size: 12px;
+}
+
+.contact-links p {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.footer-logo {
+  bottom: 44px;
+  width: 104px;
+}
+
+.footer-logo-img {
+  width: 104px;
+}
+
+.footer-text {
+  bottom: 12px;
+  font-size: 11px;
+}
+
+/* Frosty Halo / Eleanor / Aqualume*/
+
+.project-tags-top {
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.project-tags-top p {
+  padding: 7px 18px;
+  font-size: 13px;
+}
+
+.prev-next-nav {
+  padding: 0 40px 52px;
+}
+
+.pagination-link {
+  gap: 16px;
+}
+
+.pagination-link p {
+  font-size: 18px;
+}
+
+.pagination-arrow {
+  width: 42px;
+  height: 42px;
+}
+
+.project-footer-img {
+  width: 100%;
+  display: block;
+}
+
+.project-hero,
+.el-origen-hero,
+.eleanor-hero,
+.petguard-hero,
+.aqualume-hero {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.project-hero h1,
+.el-origen-hero h1,
+.eleanor-hero h1,
+.petguard-hero h1,
+.aqualume-hero h1 {
+  font-size: 112px;
+  letter-spacing: 4px;
+}
+
+.project-hero-text,
+.el-origen-hero-text,
+.eleanor-hero-text,
+.petguard-hero-text,
+.aqualume-hero-text {
+  max-width: 640px;
+  margin-bottom: 54px;
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.project-hero-img,
+.el-origen-hero-img,
+.eleanor-hero-img,
+.petguard-hero-img,
+.aqualume-hero-img {
+  border-radius: 26px;
+}
+
+.frosty-hero-decor,
+.el-origen-hero-decor,
+.eleanor-hero-decor,
+.petguard-hero-decor,
+.aqualume-hero-decor {
+  max-width: 92%;
+}
+
+.project-overview,
+.el-overview,
+.eleanor-overview,
+.petguard-overview,
+.aqualume-overview {
+  width: calc(100% - 72px);
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 104px;
+  gap: 44px;
+}
+
+.project-overview,
+.el-overview,
+.petguard-overview {
+  flex-direction: column;
+}
+
+.eleanor-overview,
+.aqualume-overview {
+  grid-template-columns: 1fr;
+}
+
+.eleanor-overview-visual {
+  max-width: 420px;
+  justify-self: center;
+}
+
+.eleanor-overview-img {
+  object-position: right center;
+}
+
+.project-overview-left,
+.el-overview-left,
+.eleanor-overview-left,
+.petguard-overview-left,
+.aqualume-overview-left {
+  max-width: 100%;
+}
+
+.project-overview h2,
+.el-overview h2,
+.eleanor-overview h2,
+.petguard-overview h2,
+.aqualume-overview h2,
+.packaging-designs h2,
+.typography-section h2,
+.character-illustrations h2,
+.deliverables-section h2,
+.el-brand-section h2,
+.el-typography-section h2,
+.el-character-section h2,
+.el-deliverables-section h2,
+.el-final-deliverables h2,
+.aqualume-logo-section h2,
+.aqualume-palette h2,
+.aqualume-icons-section h2,
+.petguard-attributes h2,
+.petguard-palette h2,
+.petguard-illustrations h2 {
+  font-size: 46px;
+}
+
+.overview-description,
+.el-overview-text,
+.eleanor-overview-text,
+.petguard-overview-text,
+.aqualume-overview-text {
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.overview-grid,
+.el-overview-grid,
+.eleanor-overview-grid,
+.petguard-overview-grid,
+.aqualume-overview-grid {
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 32px 36px;
+  max-width: 100%;
+  padding-top: 0;
+  transform: none;
+}
+
+.overview-item p,
+.el-overview .overview-item p,
+.eleanor-overview .overview-item p,
+.petguard-overview .overview-item p,
+.aqualume-overview .overview-item p {
+  font-size: 16px;
+}
+
+.packaging-designs,
+.typography-section,
+.character-illustrations,
+.deliverables-section,
+.el-brand-section,
+.el-typography-section,
+.el-character-section,
+.el-deliverables-section,
+.el-final-deliverables,
+.eleanor-showcase,
+.eleanor-palette-section,
+.eleanor-bottom-section,
+.eleanor-deliverables-section,
+.petguard-website,
+.petguard-attributes,
+.petguard-palette,
+.petguard-typography,
+.petguard-illustrations,
+.aqualume-logo-section,
+.aqualume-palette,
+.aqualume-typography,
+.aqualume-icons-section,
+.aqualume-deliverables-section {
+  width: calc(100% - 72px);
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.packaging-designs,
+.deliverables-section,
+.el-brand-section,
+.el-typography-section,
+.el-character-section,
+.el-deliverables-section,
+.el-final-deliverables,
+.eleanor-palette-section,
+.eleanor-bottom-section,
+.eleanor-deliverables-section,
+.petguard-attributes,
+.petguard-palette,
+.petguard-typography,
+.petguard-illustrations,
+.aqualume-palette,
+.aqualume-typography,
+.aqualume-icons-section,
+.aqualume-deliverables-section {
+  padding-bottom: 110px;
+}
+
+.packaging-row {
+  grid-template-columns: 1fr 96px;
+  gap: 28px;
+  margin-bottom: 72px;
+}
+
+.color-circle {
+  width: 82px;
+  height: 82px;
+}
+
+.typography-section,
+.el-typography-section,
+.petguard-typography,
+.aqualume-typography {
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.font-card,
+.el-font-card,
+.petguard-font-card,
+.aqualume-font-card {
+  width: min(100%, 280px);
+  min-height: 300px;
+  padding: 28px 22px 24px;
+}
+
+.font-label,
+.el-font-label,
+.petguard-font-label,
+.aqualume-font-label {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.font-card h2,
+.el-font-card h2,
+.petguard-font-card h2,
+.aqualume-font-card h2 {
+  font-size: 58px;
+}
+
+.font-card h3,
+.el-font-card h3,
+.petguard-font-card h3,
+.aqualume-font-card h3 {
+  font-size: 18px;
+}
+
+.font-example,
+.el-font-example,
+.petguard-font-example,
+.aqualume-font-example {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.character-top-row,
+.character-bottom-row {
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.character-illustrations h2 {
+  margin: 0 0 20px;
+  padding-left: 0;
+}
+
+.main-character {
+  height: auto;
+  margin-top: 0;
+  aspect-ratio: 1 / 1;
+}
+
+.side-characters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.deliverables-grid,
+.el-deliverables-grid,
+.aqualume-icons {
+  gap: 24px;
+}
+
+.el-brand-grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+  justify-items: center;
+}
+
+.el-logo-img {
+  max-width: 420px;
+}
+
+.el-palette-grid,
+.petguard-colors,
+.aqualume-colors {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  justify-items: center;
+}
+
+.eleanor-palette-grid {
+  max-width: 100%;
+  gap: 20px 14px;
+}
+
+.eleanor-bottom-section {
+  grid-template-columns: 1fr;
+  gap: 28px;
+  justify-items: center;
+}
+
+.eleanor-bottom-title {
+  margin-bottom: 12px;
+}
+
+.eleanor-poster-section,
+.eleanor-typography-section {
+  height: auto;
+  width: 100%;
+}
+
+.eleanor-poster-img {
+  max-width: 420px;
+  height: auto;
+}
+
+.eleanor-font-card {
+  flex: none;
+  width: min(100%, 300px);
+  min-height: 300px;
+}
+
+.eleanor-ticket-img {
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.eleanor-theater-img {
+  max-width: 680px;
+}
+
+.aqualume-overview {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.aqualume-overview-left {
+  max-width: 560px;
+}
+
+.aqualume-overview-text {
+  max-width: 560px;
+}
+
+.aqualume-overview-visual {
+  max-width: 420px;
+  min-height: 220px;
+  justify-self: center;
+}
+
+.aqualume-overview-img {
+  object-position: right center;
+}
+
+.aqualume-website-btn {
+  min-height: 50px;
+  margin-top: 42px;
+  padding: 0 24px;
+  font-size: 12px;
+}
+
+.aqualume-colors {
+  max-width: 520px;
+  gap: 20px;
+}
+
+.aqualume-color-item {
+  max-width: 132px;
+}
+
+.aqualume-color {
+  max-width: 132px;
+  border-radius: 22px;
+}
+
+.aqualume-deliverable-large {
+  max-width: 620px;
+}
+
+.aqualume-deliverables-grid {
+  max-width: 620px;
+  gap: 20px;
+}
+
+.petguard-illustration-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 40px;
+  justify-items: center;
+}
+
+.petguard-illustration-img {
+  max-width: 220px;
+}
+
+#frosty-halo-page .frosty-footer-logo-link,
+#el-origen-page .el-footer-logo-link,
+#eleanor-page .eleanor-footer-logo-link,
+#aqualume-page .aqualume-footer-logo-link {
+  width: 104px;
+  bottom: 44px;
+}
+
+#frosty-halo-page .frosty-footer-year,
+#el-origen-page .el-footer-year,
+#eleanor-page .eleanor-footer-year,
+#aqualume-page .aqualume-footer-year {
+  bottom: 12px;
+  font-size: 11px;
+  color: #FFF3CF;
+}
+
+#petguard-page .petguard-footer {
+  padding: 0 32px;
+  height: 110px;
+}
+
+#petguard-page .petguard-footer-text {
+  left: 32px;
+  font-size: 11px;
+}
+
+#petguard-page .petguard-footer-logo {
+  width: 90px;
+}
+
+#petguard-page .petguard-footer {
+  justify-content: center;
+}
+
+#petguard-page .petguard-footer-text {
+  left: 24px;
+}
+
+/* PETGUARD PAGE */
+#petguard-page .petguard-hero {
+  padding: 58px 40px 0;
+}
+
+#petguard-page .petguard-hero-decor {
+  max-width: 700px;
+  top: 86px;
+}
+
+#petguard-page .petguard-hero h1 {
+  font-size: 114px;
+}
+
+#petguard-page .petguard-hero-text {
+  max-width: 620px;
+  margin-bottom: 42px;
+}
+
+#petguard-page .petguard-overview {
+  width: calc(100% - 80px);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 78px 0 96px;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  justify-items: center;
+}
+
+#petguard-page .petguard-overview-left {
+  max-width: 620px;
+  text-align: center;
+  justify-self: start;
+}
+
+#petguard-page .petguard-overview-text {
+  max-width: 620px;
+}
+
+#petguard-page .petguard-overview-grid {
+  max-width: 560px;
+  margin: 28px auto 0;
+  text-align: left;
+}
+
+#petguard-page .petguard-overview-visual {
+  justify-content: flex-end;
+  justify-self: end;
+}
+
+#petguard-page .petguard-sign-img {
+  max-width: 420px;
+  margin-left: auto;
+  display: block;
+}
+
+#petguard-page .petguard-website,
+#petguard-page .petguard-attributes,
+#petguard-page .petguard-palette,
+#petguard-page .petguard-typography,
+#petguard-page .petguard-illustrations,
+#petguard-page .petguard-wireframes,
+#petguard-page .petguard-deliverables {
+  width: calc(100% - 80px);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#petguard-page .petguard-link-banner {
+  padding-bottom: 96px;
+}
+
+#petguard-page .petguard-link-banner-content {
+  top: 58%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  width: min(100%, 460px);
+}
+
+#petguard-page .petguard-link-banner-content h2 {
+  margin-bottom: 16px;
+  font-size: 40px;
+}
+
+#petguard-page .petguard-link-banner-content a {
+  min-height: 56px;
+  padding: 0 22px;
+  font-size: 12px;
+  border: 3px solid #3F1D13;
+  box-shadow: none;
+}
+
+#petguard-page .petguard-colors {
+  max-width: 760px;
+  gap: 22px;
+}
+
+#petguard-page .bone-img {
+  max-width: 120px;
+}
+
+#petguard-page .petguard-typography {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+#petguard-page .petguard-font-card {
+  min-height: 300px;
+  padding: 30px 18px 24px;
+}
+
+#petguard-page .petguard-font-label {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+#petguard-page .petguard-font-card h2 {
+  font-size: 62px;
+  margin-bottom: 14px;
+}
+
+#petguard-page .petguard-font-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#petguard-page .petguard-font-example {
+  font-size: 13px;
+  line-height: 1.65;
+  letter-spacing: 0.8px;
+}
+
+#petguard-page .petguard-illustration-grid {
+  max-width: 620px;
+  gap: 26px 34px;
+}
+
+#petguard-page .petguard-illustration-img {
+  max-width: 272px;
+}
+
+#petguard-page .petguard-wireframes-grid {
+  gap: 16px;
+  align-items: start;
+}
+
+#petguard-page .petguard-wireframe-img {
+  width: 210px;
+  flex-basis: 210px;
+}
+
+#petguard-page .petguard-deliverables-top {
+  max-width: 720px;
+  margin-bottom: 0;
+  grid-template-columns: 280px 320px;
+  grid-template-rows: auto auto;
+  gap: 24px 28px;
+}
+
+#petguard-page .petguard-deliverable-phone {
+  max-width: 280px;
+}
+
+#petguard-page .petguard-deliverable-tablet {
+  max-width: 280px;
+}
+
+#petguard-page .petguard-deliverable-full {
+  max-width: 320px;
+}
+
+#petguard-page .prev-next-nav {
+  width: calc(100% - 80px);
+  max-width: 900px;
+  padding: 0 0 24px;
+}
+
+#petguard-page .petguard-footer-logo-link {
+  width: 90px;
+  bottom: 40px;
+}
+
+#petguard-page .petguard-footer-year {
+  bottom: 14px;
+  font-size: 10px;
+}
+
+/* LATE TABLET OVERRIDE LAYER */
+
+/* HOMEPAGE + SHARED PROJECT REFINEMENTS */
+.hero {
+  margin-top: -72px;
+}
+
+.about {
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  margin: 0 auto;
+}
+
+.selected-projects-heading p {
+  color: #1E1E1E;
+}
+
+.category-btn {
+  border: 2px solid #D9C8FF;
+  background-color: transparent;
+  color: #A684F3;
+}
+
+.active-btn {
+  border-color: #A684F3;
+  background-color: #A684F3;
+  color: #FFFCF0;
+}
+
+.project-card {
+  background-color: #B6D460;
+}
+
+.project-tags p {
+  background-color: #FFF3CF;
+  color: #74922A;
+}
+
+.coming-soon {
+  background-position: center;
+  background-size: calc(100% - 44px) calc(100% - 44px);
+}
+
+.coming-soon-inner {
+  min-height: 100%;
+  justify-content: center;
+  transform: translateY(-6px);
+}
+
+.coming-soon-eyebrow {
+  padding: 8px 20px 7px;
+  font-size: 13px;
+}
+
+.coming-soon-inner h3 {
+  font-size: 40px;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 156px));
+  justify-content: center;
+  gap: 20px 28px;
+}
+
+.contact-item {
+  width: 100%;
+}
+
+.footer-logo {
+  width: 92px;
+  bottom: 34px;
+}
+
+.footer-logo-img {
+  width: 92px;
+}
+
+.footer-text {
+  bottom: 10px;
+}
+
+.prev-next-nav {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 0 34px;
+  gap: 28px;
+}
+
+.pagination-link {
+  gap: 12px;
+}
+
+.pagination-link p {
+  font-size: 16px;
+}
+
+.pagination-arrow {
+  width: 36px;
+  height: 36px;
+}
+
+.project-overview {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-overview-left {
+  max-width: 360px;
+}
+
+.overview-description {
+  max-width: 330px;
+}
+
+.overview-grid {
+  max-width: 430px;
+  gap: 22px 24px;
+}
+
+/* FROSTY HALO REFINEMENTS */
+#frosty-halo-page .project-overview {
+  padding-top: 58px;
+  gap: 34px;
+}
+
+#frosty-halo-page .overview-description {
+  max-width: 320px;
+}
+
+#frosty-halo-page .character-top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+#frosty-halo-page .character-bottom-row {
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+
+#frosty-halo-page .main-character {
+  max-width: 260px;
+  justify-self: center;
+}
+
+#frosty-halo-page .side-characters {
+  gap: 18px;
+}
+
+/* EL ORIGEN REFINEMENTS */
+#el-origen-page .el-overview {
+  width: calc(100% - 72px);
+  max-width: 920px;
+  padding-top: 58px;
+  padding-bottom: 96px;
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 420px);
+  align-items: center;
+  gap: 34px;
+}
+
+#el-origen-page .el-overview-content {
+  max-width: 360px;
+}
+
+#el-origen-page .el-overview-video {
+  width: 100%;
+  max-width: 380px;
+  justify-self: end;
+}
+
+/* ELEANOR REFINEMENTS */
+#eleanor-page .eleanor-overview {
+  width: calc(100% - 72px);
+  max-width: 920px;
+  grid-template-columns: minmax(0, 360px) minmax(0, 320px);
+  align-items: center;
+  gap: 34px;
+  text-align: left;
+}
+
+#eleanor-page .eleanor-overview-left {
+  max-width: 360px;
+  justify-self: start;
+}
+
+#eleanor-page .eleanor-overview-text {
+  max-width: 320px;
+}
+
+#eleanor-page .eleanor-overview-visual {
+  max-width: 320px;
+  justify-self: end;
+}
+
+#eleanor-page .eleanor-overview-img {
+  max-width: 320px;
+}
+
+#eleanor-page .eleanor-bottom-section {
+  grid-template-columns: minmax(0, 360px) minmax(0, 250px);
+  align-items: start;
+  gap: 24px;
+}
+
+#eleanor-page .eleanor-bottom-title {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#eleanor-page .eleanor-poster-img {
+  max-width: 360px;
+}
+
+/* PETGUARD REFINEMENTS */
+#petguard-page .petguard-overview-left {
+  max-width: 360px;
+  text-align: left;
+}
+
+#petguard-page .petguard-overview-text {
+  max-width: 340px;
+}
+
+#petguard-page .petguard-overview-visual {
+  align-self: center;
+}
+
+#petguard-page .petguard-sign-img {
+  max-width: 320px;
+}
+
+#petguard-page .petguard-colors {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* AQUALUME REFINEMENTS */
+#aqualume-page .aqualume-overview {
+  width: calc(100% - 72px);
+  max-width: 920px;
+  grid-template-columns: minmax(0, 360px) minmax(0, 320px);
+  align-items: center;
+  gap: 34px;
+  text-align: left;
+}
+
+#aqualume-page .aqualume-overview-left {
+  max-width: 360px;
+  justify-self: start;
+}
+
+#aqualume-page .aqualume-overview-text {
+  max-width: 320px;
+}
+
+#aqualume-page .aqualume-overview-visual {
+  max-width: 320px;
+  min-height: 0;
+  justify-self: end;
+}
+
+#aqualume-page .aqualume-overview-img {
+  max-width: 320px;
+}
+
+#aqualume-page .aqualume-colors {
+  max-width: 760px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+#aqualume-page .aqualume-typography {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+#aqualume-page .aqualume-font-card {
+  width: 100%;
+  min-height: 310px;
+}
+
+#aqualume-page .aqualume-icons {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* FOOTER REFINEMENTS */
+#frosty-halo-page .frosty-footer-logo-link,
+#el-origen-page .el-footer-logo-link,
+#eleanor-page .eleanor-footer-logo-link,
+#aqualume-page .aqualume-footer-logo-link {
+  width: 90px;
+  bottom: 34px;
+}
+
+#frosty-halo-page .frosty-footer-year,
+#el-origen-page .el-footer-year,
+#eleanor-page .eleanor-footer-year,
+#aqualume-page .aqualume-footer-year {
+  bottom: 10px;
+}
+
+#petguard-page .petguard-footer-logo-link {
+  width: 90px;
+  bottom: 34px;
+}
+
+#petguard-page .petguard-footer-year {
+  bottom: 10px;
+}
+
+/* HOMEPAGE FINAL PASS */
+.hero {
+  margin-top: -54px;
+}
+
+.hero-content {
+  display: flex;
+  padding-top: 72px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 132px;
+  letter-spacing: 3px;
+}
+
+.hero-banner {
+  margin-top: -4px;
+}
+
+.about {
+  gap: 40px;
+  grid-template-columns: minmax(280px, 330px) minmax(0, 380px);
+}
+
+.about-image {
+  max-width: 330px;
+  justify-self: end;
+  transform: translateX(-14px);
+}
+
+.about-content {
+  justify-self: start;
+}
+
+.coming-soon-inner {
+  transform: translateY(-16px);
+}
+
+.coming-soon-eyebrow {
+  font-size: 14px;
+}
+
+.coming-soon-inner h3 {
+  font-size: 46px;
+}
+
+.prev-next-nav,
+#petguard-page .prev-next-nav,
+#frosty-halo-page .prev-next-nav,
+#el-origen-page .prev-next-nav,
+#eleanor-page .prev-next-nav,
+#aqualume-page .prev-next-nav {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 0 0 28px;
+  justify-content: center;
+  gap: 118px;
+}
+
+#petguard-page .petguard-overview {
+  width: 90%;
+  max-width: 920px;
+  padding: 70px 0 58px;
+  grid-template-columns: minmax(0, 360px) minmax(0, 380px);
+  align-items: start;
+  gap: 34px;
+}
+
+#petguard-page .petguard-overview-left {
+  max-width: 360px;
+}
+
+#petguard-page .petguard-overview-visual {
+  align-self: start;
+  justify-self: end;
+}
+
+#petguard-page .petguard-sign-img {
+  max-width: 340px;
+}
+
+#petguard-page .petguard-footer {
+  margin-top: -8px;
+  padding: 0;
+  height: auto;
+  border-radius: 0;
+}
+
+#petguard-page .petguard-footer::before,
+#petguard-page .petguard-footer::after {
+  display: none;
+}
+
+#petguard-page .petguard-footer-logo-link,
+#frosty-halo-page .frosty-footer-logo-link,
+#el-origen-page .el-footer-logo-link,
+#eleanor-page .eleanor-footer-logo-link,
+#aqualume-page .aqualume-footer-logo-link {
+  width: 92px;
+  bottom: 34px;
+}
+
+#petguard-page .petguard-footer-year,
+#frosty-halo-page .frosty-footer-year,
+#el-origen-page .el-footer-year,
+#eleanor-page .eleanor-footer-year,
+#aqualume-page .aqualume-footer-year {
+  bottom: 10px;
+}
+
+/* FROSTY HALO FINAL*/
+#frosty-halo-page .project-overview {
+  width: 90%;
+  max-width: 900px;
+  gap: 24px;
+}
+
+#frosty-halo-page .overview-grid {
+  max-width: 280px;
+  justify-items: start;
+  gap: 14px 14px;
+}
+
+#frosty-halo-page .overview-item p {
+  max-width: 132px;
+}
+
+#frosty-halo-page .tools-item p {
+  max-width: 152px;
+}
+
+#frosty-halo-page .character-top-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+#frosty-halo-page .character-bottom-row {
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+}
+
+#frosty-halo-page .main-character {
+  max-width: 220px;
+}
+
+#frosty-halo-page .top-character-img {
+  width: 100%;
+  max-width: 220px;
+  justify-self: end;
+}
+
+#frosty-halo-page .side-characters {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* EL ORIGEN */
+#el-origen-page .el-logo-card {
+  margin-top: 34px;
+}
+
+/* ELEANOR + AQUALUME */
+#eleanor-page .eleanor-overview,
+#aqualume-page .aqualume-overview {
+  width: 90%;
+  max-width: 920px;
+  grid-template-columns: minmax(0, 360px) minmax(0, 380px);
+  align-items: center;
+  gap: 34px;
+}
+
+#eleanor-page .eleanor-overview {
+  gap: 40px;
+}
+
+#eleanor-page .eleanor-overview-left,
+#aqualume-page .aqualume-overview-left {
+  max-width: 360px;
+  justify-self: start;
+}
+
+#eleanor-page .eleanor-overview-visual,
+#aqualume-page .aqualume-overview-visual {
+  max-width: 380px;
+  justify-self: end;
+}
+
+#eleanor-page .eleanor-overview-img {
+  max-width: 360px;
+  margin-left: auto;
+}
+
+#aqualume-page .aqualume-overview-img {
+  max-width: 360px;
+}
+
+/* HOMEPAGE */
+.hero {
+  margin-top: -42px;
+}
+
+.hero-picture {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: 124px;
+  letter-spacing: 3px;
+}
+
+.hero-banner {
+  margin-top: 0;
+}
+
+.project-card,
+.coming-soon {
+  padding: 20px 20px 22px;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.prev-next-nav,
+#petguard-page .prev-next-nav,
+#frosty-halo-page .prev-next-nav,
+#el-origen-page .prev-next-nav,
+#eleanor-page .prev-next-nav,
+#aqualume-page .prev-next-nav {
+  gap: 132px;
+}
+
+/* FROSTY HALO */
+#frosty-halo-page .project-overview {
+  width: 86%;
+  max-width: 860px;
+  gap: 18px;
+}
+
+#frosty-halo-page .project-overview-left {
+  max-width: 360px;
+}
+
+#frosty-halo-page .overview-grid {
+  max-width: 250px;
+  justify-self: start;
+  gap: 12px 12px;
+}
+
+#frosty-halo-page .overview-item p {
+  max-width: 118px;
+}
+
+#frosty-halo-page .tools-item p {
+  max-width: 136px;
+}
+
+#frosty-halo-page .character-illustrations {
+  width: 86%;
+  max-width: 860px;
+}
+
+#frosty-halo-page .character-illustrations h2 {
+  text-align: left;
+  align-self: end;
+}
+
+#frosty-halo-page .character-top-row {
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 14px;
+}
+
+#frosty-halo-page .character-bottom-row {
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 14px;
+}
+
+#frosty-halo-page .main-character,
+#frosty-halo-page .top-character-img {
+  max-width: 200px;
+}
+
+#frosty-halo-page .side-characters {
+  gap: 12px;
+}
+
+/* ELEANOR */
+#eleanor-page .eleanor-overview {
+  width: 86%;
+  max-width: 900px;
+  grid-template-columns: minmax(0, 330px) minmax(0, 390px);
+  gap: 54px;
+}
+
+#eleanor-page .eleanor-overview-left {
+  max-width: 330px;
+}
+
+#eleanor-page .eleanor-overview-visual {
+  max-width: 390px;
+}
+
+#eleanor-page .eleanor-overview-img {
+  max-width: 376px;
+}
+
+#eleanor-page .eleanor-bottom-section {
+  grid-template-columns: minmax(0, 420px) minmax(0, 250px);
+  gap: 28px;
+}
+
+#eleanor-page .eleanor-poster-img {
+  max-width: 420px;
+}
+
+/* AQUALUME */
+#aqualume-page .aqualume-overview {
+  width: 86%;
+  max-width: 900px;
+  grid-template-columns: minmax(0, 330px) minmax(0, 390px);
+  gap: 54px;
+}
+
+#aqualume-page .aqualume-overview-left {
+  max-width: 330px;
+}
+
+#aqualume-page .aqualume-overview-visual {
+  max-width: 390px;
+}
+
+#aqualume-page .aqualume-overview-img {
+  max-width: 376px;
+}
+
+.hero {
+  margin-top: -68px;
+}
+
+.hero-content {
+  padding-top: 6px;
+}
+
+.hero h1 {
+  font-size: 152px;
+}
+
+.project-card,
+.coming-soon {
+  padding: 24px 24px 26px;
+}
+
+.project-img {
+  width: calc(100% + 16px);
+  max-width: none;
+  margin-left: -8px;
+}
+
+.prev-next-nav,
+#petguard-page .prev-next-nav,
+#frosty-halo-page .prev-next-nav,
+#el-origen-page .prev-next-nav,
+#eleanor-page .prev-next-nav,
+#aqualume-page .prev-next-nav {
+  width: 90%;
+  max-width: 940px;
+  justify-content: space-between;
+  gap: 0;
+}
+
+/* FROSTY HALO */
+#frosty-halo-page .project-overview {
+  width: 78%;
+  max-width: 660px;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+}
+
+#frosty-halo-page .project-overview-left {
+  max-width: 360px;
+}
+
+#frosty-halo-page .overview-grid {
+  max-width: 184px;
+  margin-left: 0;
+  padding-top: 2px;
+  gap: 8px 4px;
+}
+
+#frosty-halo-page .overview-item p {
+  max-width: 88px;
+}
+
+#frosty-halo-page .tools-item p {
+  max-width: 122px;
+  font-size: 13px;
+  line-height: 1.28;
+  white-space: normal;
+}
+
+#frosty-halo-page .tools-item .tools-line {
+  display: block;
+}
+
+#frosty-halo-page .character-illustrations {
+  display: grid;
+  grid-template-columns: 320px 170px;
+  grid-template-areas:
+    "title title"
+    "main top"
+    "main side";
+  justify-content: center;
+  align-items: start;
+  gap: 16px 20px;
+}
+
+#frosty-halo-page .character-top-row,
+#frosty-halo-page .character-bottom-row {
+  display: contents;
+}
+
+#frosty-halo-page .character-illustrations h2 {
+  grid-area: title;
+  margin: 0 0 6px;
+  text-align: center;
+  align-self: start;
+}
+
+#frosty-halo-page .top-character-img {
+  grid-area: top;
+  max-width: 186px;
+}
+
+#frosty-halo-page .main-character {
+  grid-area: main;
+  width: 340px;
+  max-width: 340px;
+  height: 412px;
+  margin-top: 0;
+}
+
+#frosty-halo-page .side-characters {
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  gap: 10px;
+}
+
+#frosty-halo-page .side-character-img {
+  max-width: 186px;
+}
+
+#frosty-halo-page .side-characters .side-character-img:last-child {
+  margin-top: auto;
+}
+
+/* ELEANOR */
+#eleanor-page .eleanor-overview {
+  grid-template-columns: 300px 390px;
+  justify-content: space-between;
+  gap: 62px;
+}
+
+#eleanor-page .eleanor-overview-left {
+  max-width: 300px;
+}
+
+#eleanor-page .eleanor-overview-visual {
+  justify-self: end;
+}
+
+/* AQUALUME */
+#aqualume-page .aqualume-overview {
+  grid-template-columns: 300px 390px;
+  justify-content: space-between;
+  gap: 62px;
+}
+
+#aqualume-page .aqualume-overview-left {
+  max-width: 300px;
+}
+
+#aqualume-page .aqualume-overview-visual {
+  justify-self: end;
+}

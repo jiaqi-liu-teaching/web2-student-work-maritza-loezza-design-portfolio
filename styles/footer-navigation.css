@@ -1,0 +1,118 @@
+/* Readable end-of-page navigation and footer sizing across the portfolio. */
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .prev-next-nav .pagination-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 56px;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .prev-next-nav .pagination-link p {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .prev-next-nav .pagination-arrow {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) :is(.footer,.project-footer) {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-art.footer-art {
+  width: 100%;
+  min-height: 0;
+  display: block;
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-brand.footer-brand {
+  position: absolute;
+  left: 50%;
+  bottom: 64px;
+  width: 120px;
+  transform: translateX(-50%);
+  display: block;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-brand > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-copyright.footer-copyright {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  margin: 0;
+  width: max-content;
+  font-family: 'SN Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+@media (max-width: 600px) {
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .prev-next-nav .pagination-link {
+    gap: 12px;
+    min-height: 48px;
+  }
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .prev-next-nav .pagination-link p {
+    font-size: 16px;
+  }
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .prev-next-nav .pagination-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-art.footer-art {
+    min-height: 0;
+  }
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-brand.footer-brand {
+    width: 64px;
+    bottom: 42px;
+  }
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-copyright.footer-copyright {
+    bottom: 14px;
+    font-size: 12px;
+  }
+}
+
+/* Keep the transition airy while keeping the footer itself compact. */
+#home-page { --footer-fill: #afcf61; }
+#petguard-page { --footer-fill: #1285aa; }
+#frosty-halo-page { --footer-fill: #f186b6; }
+#el-origen-page { --footer-fill: #092036; }
+#eleanor-page { --footer-fill: #b34042; }
+#aqualume-page { --footer-fill: #5d64be; }
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) > :is(.footer,.project-footer) {
+  margin-top: 0;
+  min-height: 220px;
+  background: linear-gradient(to bottom, transparent 0 6.9vw, var(--footer-fill) 6.9vw 100%);
+}
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-brand.footer-brand,
+:is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) .footer-copyright.footer-copyright {
+  z-index: 2;
+}
+:is(#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) > section.prev-next-nav.project-section {
+  margin-bottom: 32px;
+  padding-bottom: 0;
+}
+#home-page > .contact {
+  padding-bottom: 32px;
+}
+@media (max-width: 600px) {
+  :is(#home-page,#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) > :is(.footer,.project-footer) {
+    min-height: 136px;
+  }
+  :is(#petguard-page,#frosty-halo-page,#el-origen-page,#eleanor-page,#aqualume-page) > section.prev-next-nav.project-section {
+    margin-bottom: 20px;
+  }
+  #home-page > .contact {
+    padding-bottom: 20px;
+  }
+}

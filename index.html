@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maritza">
+    <meta name="description" content="Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maritza's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;500;600;700;800&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://use.typekit.net/bom4ndo.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="styles/first-screen.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer-navigation.css">
+    <link rel="stylesheet" href="styles/tablet-layout.css" media="(min-width: 601px) and (max-width: 1024px)">
+  </head>
+
+  <body id="home-page">
+
+    <div class="home-first-screen">
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+      </div>
+
+      <a href="index.html" class="nav-logo">
+        <img src="images/home/my-logo.svg" class="nav-logo-img" alt="Maritza logo">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-right">
+        <a href="#contact">CONTACT</a>
+      </div>
+
+      <div class="nav-mobile-panel">
+        <div class="nav-mobile-primary">
+          <a href="#about">ABOUT</a>
+          <a href="#work" class="nav-work-link">WORK</a>
+        </div>
+
+        <div class="nav-mobile-projects">
+          <a href="petguard.html">PETGUARD</a>
+          <a href="frostyhalo.html">FROSTY HALO</a>
+          <a href="elorigen.html">EL ORIGEN</a>
+          <a href="eleanor.html">ELEANOR</a>
+          <a href="aqualume.html">AQUALUME</a>
+        </div>
+
+        <div class="nav-mobile-secondary">
+          <a href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <picture class="hero-picture">
+        <source media="(max-width: 600px)" srcset="images/home/mobile-portfolio-hero-extended.png">
+        <img src="images/home/portfolio-home-page.png" class="hero-bg" alt="Portfolio decorative graphics">
+      </picture>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">GRAPHIC DESIGNER</p>
+        <h1>PORTFOLIO</h1>
+      </div>
+
+    </section>
+
+    <!-- HERO BANNER -->
+    <section class="hero-banner" data-marquee data-marquee-speed="0.45">
+      <div class="hero-banner-track hero-banner-text" data-marquee-track>
+        <span class="hero-banner-item">WEB DESIGN</span>
+        <span class="hero-banner-item">BRANDING</span>
+        <span class="hero-banner-item">ILLUSTRATION</span>
+        <span class="hero-banner-item">INTERACTIVE DESIGN</span>
+        <span class="hero-banner-item">DIGITAL EXPERIENCES</span>
+        <span class="hero-banner-item">CREATIVE DEVELOPMENT</span>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+      <div class="about-image">
+        <img src="images/home/picture-of-me.png" alt="Illustration of Maritza">
+      </div>
+
+      <div class="about-content">
+
+        <p class="section-eyebrow peach">ABOUT ME</p>
+
+        <h2>HI, I’M MARITZA.</h2>
+
+        <p>
+          I’m a designer and illustrator who enjoys creating playful,
+          thoughtful, and visually engaging digital experiences.
+          I love combining illustration, branding, and web design
+          to create projects that feel creative while still intentional.
+        </p>
+
+        <p>
+          Right now, I’m exploring different styles through branding,
+          websites, and interactive projects while continuing to experiment
+          with new ideas and grow my creative process.
+        </p>
+
+      </div>
+
+      <img src="images/home/flower-decor-right.png" class="about-flower" alt="">
+
+    </section>
+
+    <!-- SELECTED PROJECTS -->
+    <section class="selected-projects" id="work">
+
+      <div class="selected-projects-heading">
+        <h2>SELECTED PROJECTS</h2>
+        <p>A collection of creative work...</p>
+      </div>
+
+      <div class="project-categories">
+        <button class="category-btn active-btn" type="button" data-filter="all">ALL</button>
+        <button class="category-btn" type="button" data-filter="web-design">WEB DESIGN</button>
+        <button class="category-btn" type="button" data-filter="illustration">ILLUSTRATION</button>
+        <button class="category-btn" type="button" data-filter="branding">BRANDING</button>
+        <button class="category-btn" type="button" data-filter="packaging">PACKAGING</button>
+        <button class="category-btn" type="button" data-filter="motion-design">MOTION DESIGN</button>
+      </div>
+
+    </section>
+
+    <!-- PROJECT GRID -->
+    <section class="project-work">
+
+      <!-- PETGUARD -->
+      <a href="petguard.html" class="project-card web-design illustration">
+
+        <img src="images/home/pet-guard-work-page.png" class="project-img" alt="PetGuard project">
+
+        <h3>PETGUARD</h3>
+
+        <p>
+          Pet grooming website design with custom spot illustrations, a friendly tone, and a clean layout tailored for dog owners.
+        </p>
+
+        <div class="project-tags">
+          <p>Web Design</p>
+          <p>Illustration</p>
+        </div>
+
+        <span class="project-arrow" aria-hidden="true">
+          <img src="images/home/up-arrow.svg" alt="View project">
+        </span>
+
+      </a>
+
+      <!-- FROSTY HALO -->
+      <a href="frostyhalo.html" class="project-card branding packaging">
+
+        <img src="images/home/frosty-halo-work-page.png" class="project-img" alt="Frosty Halo project">
+
+        <h3>FROSTY HALO</h3>
+
+        <p>
+          Dessert branding and packaging with playful visuals, bright color, and a sweet identity designed to feel cohesive.
+        </p>
+
+        <div class="project-tags">
+          <p>Branding</p>
+          <p>Packaging</p>
+        </div>
+
+        <span class="project-arrow" aria-hidden="true">
+          <img src="images/home/up-arrow.svg" alt="View project">
+        </span>
+
+      </a>
+
+      <!-- EL ORIGEN -->
+      <a href="elorigen.html" class="project-card branding motion-design">
+
+        <img src="images/home/el-origen-work-page.png" class="project-img" alt="El Origen project">
+
+        <h3>EL ORIGEN</h3>
+
+        <p>
+          Branding and event design inspired by Hispanic culture, featuring bold visuals, vibrant custom graphics, and festive energy.
+        </p>
+
+        <div class="project-tags">
+          <p>Branding</p>
+          <p>Motion Design</p>
+        </div>
+
+        <span class="project-arrow" aria-hidden="true">
+          <img src="images/home/up-arrow.svg" alt="View project">
+        </span>
+
+      </a>
+
+      <!-- ELEANOR -->
+      <a href="eleanor.html" class="project-card illustration">
+
+        <img src="images/home/eleanor-work-page.png" class="project-img" alt="Eleanor project">
+
+        <h3>ELEANOR</h3>
+
+        <p>
+          Disney-inspired poster illustration featuring Eleanor Mouse, a cheerful ballerina brought to life with whimsical detail in Procreate.
+        </p>
+
+        <div class="project-tags">
+          <p>Illustration</p>
+        </div>
+
+        <span class="project-arrow" aria-hidden="true">
+          <img src="images/home/up-arrow.svg" alt="View project">
+        </span>
+
+      </a>
+
+      <!-- AQUALUME -->
+      <a href="aqualume.html" class="project-card web-design motion-design">
+
+        <img src="images/home/aqualume-work-page.png" class="project-img" alt="Aqualume project">
+
+        <h3>AQUALUME</h3>
+
+        <p>
+          Aquarium website design with immersive visuals, interactive moments, and a clean layout inspired by marine life.
+        </p>
+
+        <div class="project-tags">
+          <p>Web Design</p>
+          <p>Motion Design</p>
+        </div>
+
+        <span class="project-arrow" aria-hidden="true">
+          <img src="images/home/up-arrow.svg" alt="View project">
+        </span>
+
+      </a>
+
+      <!-- COMING SOON -->
+      <div class="project-card coming-soon">
+
+        <div class="coming-soon-inner">
+          <p class="coming-soon-eyebrow">STAY TUNED</p>
+          <h3>COMING SOON</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+      <div class="contact-content">
+
+        <p class="section-eyebrow purple">GET IN TOUCH</p>
+
+        <h2>LET’S CONNECT</h2>
+
+        <p class="contact-text">
+          Interested in working together or just want to say hi?<br>I’d love to hear from you!
+        </p>
+
+        <div class="contact-links">
+
+          <a href="mailto:hello@maritzaloezza.com" class="contact-item">
+            <img src="images/home/email-icon.png" alt="Email icon">
+            <h3>EMAIL</h3>
+            <p>loezza.m17@gmail.com</p>
+          </a>
+
+          <a href="https://www.instagram.com/_.maritza17._/" class="contact-item" target="_blank" rel="noreferrer">
+            <img src="images/home/instagram-icon.png" alt="Instagram icon">
+            <h3>INSTAGRAM</h3>
+            <p>_.maritza17._</p>
+          </a>
+
+          <a href="https://www.behance.net/maritzaloezza" class="contact-item" target="_blank" rel="noreferrer">
+            <img src="images/home/behance-icon.png" alt="Behance icon">
+            <h3>BEHANCE</h3>
+            <p>behance.net/maritzaloezza</p>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <img src="images/home/footer.png" class="footer-bg-img footer-art" alt="Homepage footer background">
+
+      <a href="index.html" class="footer-logo footer-brand">
+        <img src="images/home/my-logo.svg" class="footer-logo-img" alt="Maritza logo">
+      </a>
+
+      <p class="footer-text footer-copyright">© 2026 Maritza Loezza</p>
+
+    </footer>
+
+    <script src="scripts/mobile-nav.js"></script>
+
+  </body>
+</html>

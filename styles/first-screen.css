@@ -1,0 +1,148 @@
+/* Keep the navigation, hero and marquee within the initial viewport. */
+#home-page .home-first-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100svh;
+}
+#home-page .home-first-screen > .nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#home-page .home-first-screen > .hero {
+  flex: 1 1 0;
+  min-height: 0;
+  height: auto;
+  margin: 0;
+}
+#home-page .home-first-screen .hero-picture {
+  position: absolute;
+  inset: 0;
+}
+#home-page .home-first-screen .hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#home-page .home-first-screen > .hero-banner {
+  flex: 0 0 auto;
+  margin-top: 0;
+}
+@media (max-height: 500px) and (min-width: 601px) {
+  #home-page .home-first-screen .hero h1 {
+    font-size: clamp(64px, 22svh, 152px);
+  }
+  #home-page .home-first-screen .hero-eyebrow {
+    margin-bottom: 8px;
+  }
+}
+
+/* Center the marquee vertically without top-only padding shifting it down. */
+#home-page .home-first-screen > .hero-banner {
+  padding-block: 0;
+}
+#home-page .home-first-screen .hero-banner-track {
+  min-height: 0;
+  align-items: center;
+}
+
+/* Make keyboard focus visible around the complete project link. */
+#home-page a.project-card:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+}
+
+/* Preserve every decoration in the mobile artwork inside the first screen. */
+@media (max-width: 600px) {
+  #home-page .home-first-screen .hero-picture {
+    top: 68px;
+  }
+  #home-page .home-first-screen .hero-bg {
+    object-fit: cover;
+    object-position: center;
+  }
+  #home-page .home-first-screen .hero-content {
+    top: 68px;
+  }
+}
+
+/* Tighten the description-to-tag spacing on homepage project cards. */
+#home-page .project-card .project-tags {
+  padding-top: 10px;
+}
+
+/* One inset on every card edge; all content shares the same alignment. */
+#home-page .project-card {
+  --card-padding: 24px;
+  --card-arrow: 46px;
+  box-sizing: border-box;
+  padding: var(--card-padding);
+}
+#home-page .project-card > .project-img {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+#home-page .project-card > :is(h3,p) {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+#home-page .project-card .project-tags {
+  padding-left: 0;
+  padding-right: calc(var(--card-arrow) + 12px);
+  padding-top: 10px;
+  padding-bottom: 0;
+  min-height: calc(var(--card-arrow) + 10px);
+}
+#home-page .project-card .project-arrow {
+  width: var(--card-arrow);
+  height: var(--card-arrow);
+  right: var(--card-padding);
+  bottom: var(--card-padding);
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  #home-page .project-card {
+    --card-padding: 20px;
+    --card-arrow: 40px;
+  }
+}
+@media (max-width: 600px) {
+  #home-page .project-card {
+    --card-padding: 18px;
+    --card-arrow: 40px;
+  }
+}
+
+/* Desktop About shares the Selected Projects content boundaries. */
+@media (min-width: 1025px) {
+  #home-page .about {
+    width: calc(100% - 72px);
+    max-width: 1160px;
+    margin-inline: auto;
+    padding-inline: 0;
+    grid-template-columns: 400px minmax(0, 1fr);
+    justify-content: stretch;
+  }
+  #home-page .about-image {
+    justify-self: start;
+    margin-inline: 0;
+    transform: none;
+  }
+  #home-page .about-content {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    justify-self: stretch;
+  }
+  #home-page .about-content p {
+    max-width: none;
+  }
+}
